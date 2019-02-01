@@ -31,9 +31,9 @@ File name                            | File description
 - Execute `terraform plan` to create execution plan and see what resources will be created.
 - Execute `terraform apply` to create the new resources. 
 - Next you need to create `.gitignore` file and put the `.terraform/` and `terraform.tfstate` files in there. 
-- Next you need to go to Terraform Enterprice(TFE) to create a new workspace
+- Next you need to go to Terraform Enterprice(TFE) to create a new workspace.
   - name your workspace.
-  - choose none as source 
+  - choose none as source. 
 - Next update your `main.tf` file with the code below:
 
  ```
@@ -50,12 +50,12 @@ File name                            | File description
   }
  ```
 - Next we need to authenticate to TFE so the existing state on your local computer gets copied to TFE:
-  - go to TFE website and click on user settings in upper right corner
-  - then click on tokens on the left pane
-  - next name your token and click generate token 
-  - make sure you copy and download your token and save it in secure place for future use
-- Next execute `export ATLAS_TOKEN=your_TFE_token_here` to authenticate with TFE
-- Next execute `terraform init` to initialize the new backend
+  - go to TFE website and click on user settings in upper right corner.
+  - then click on tokens on the left pane.
+  - next name your token and click generate token.
+  - make sure you copy and download your token and save it in secure place for future use.
+- Next execute `export ATLAS_TOKEN=your_TFE_token_here` to authenticate with TFE.
+- Next execute `terraform init` to initialize the new backend.
 - Next enter yes to the `Enter a value` prompt, the output should display the follwing:
 
  ```
@@ -95,7 +95,7 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
  ```
 -     
-- Next you can commite your changes to the GitHub repository you created:
+- Next you can commite your changes to the GitHub repository you created.
   - execute `git add .gitignore main.tf` command to add the files that will be commited.
   - execute `git commint -m "your comment here"` to commite the files to the newbranch, the output should display:
   
@@ -107,7 +107,7 @@ commands will detect it and remind you to do so if necessary.
     create mode 100644 .gitignore
     create mode 100644 main.tf
  ```
-- Next step is to push all the changes to the GitHub repository:
+- Next step is to push all the changes to the GitHub repository.
   - execute `git push origin newbranch` command to push your changes to GitHub, the output should display:
   
   
@@ -127,4 +127,4 @@ commands will detect it and remind you to do so if necessary.
  ```
   
 - Next go to GitHub and follow the prompts to create and merge the pull request.
-- Finaly you can check your copied state in TFE by goign to Workspaces -> your_workpace_name -> States
+- Finaly you can check your copied state in TFE by goign to Workspaces -> your_workpace_name -> States.
