@@ -1,7 +1,7 @@
 # terraform_atlas_remote_state_backend
 
 ### Purpose of the repository 
-- The repository creates atalas state backend, atalas is the former name of Therraform Enterprices. 
+- The repository creates atlas state backend, atlas is the former name of Therraform Enterprices. 
 
 #### List of files in the repository
 
@@ -109,7 +109,6 @@ commands will detect it and remind you to do so if necessary.
  ```
 - Next step is to push all the changes to the GitHub repository.
   - execute `git push origin newbranch` command to push your changes to GitHub, the output should display:
-  
   
  ```
    Counting objects: 4, done.
